@@ -5,8 +5,151 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
+	<header class="main-header">
+		<nav class="main-navigation">
+			<a class="main-header-logo">
+				<img src="img/index-logo.svg" width="" height="" alt="Логотип Nёrds">
+			</a>
+			<ul>
+				<li><a href="studio">студия</a></li>
+				<li><a href="clientele.html">клиенты</a></li>
+				<li><a href="catalog.html">магазин</a></li>
+				<li><a href="contacts.html">контакты</a></li>
+			</ul>
+			<ul class="user-navigation">
+          		<li class="cart" ><a href="#">корзина</a></li>
+       		</ul>
+		</nav>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+	</header>
+    <main class="container">
+		<h1 class="visually-hidden">Дизайн-студия Nёrds</h1>
+    	<section class="slides">
+        	<h2 class="visually-hidden">Слайдер</h2>
+        	<figure class="slide-content">
+        		<b>Долго, дорого, скрупулезно.</b>
+        		<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          		<a class="button" href="#">Узнать больше</a>
+          	</figure>
+
+          	<figure class="slide-content">
+        		<b>Любим математику как никто другой</b>
+        		<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          		<a class="button" href="#">Узнать больше</a>
+          	</figure>
+
+          	<figure class="slide-content">
+        		<b>Только ночь,только хардкор</b>
+        		<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          		<a class="button" href="#">Узнать больше</a>
+          	</figure>
+        </section>
+
+    	
+		<section class="features">
+ 			<h2 class="visually-hidden">Преимущества</h2>
+ 			<ul class="features-list">
+ 				<li class="feature-item">
+ 					<h3>Веб-сайты</h3>
+ 					<a href="">
+ 						<img src=" " alt="веб-сайты">
+ 					</a>
+ 					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+ 					<a class="button" href="#">заказать</a>
+ 				</li>
+
+ 				<li class="feature-item">
+ 					<h3>Приложения</h3>
+ 					<a href="">
+ 						<img src=" " alt="приложения">
+ 					</a>
+ 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+ 					<a class="button" href="#">заказать</a>
+ 				</li>
+
+ 				<li class="feature-item">
+ 					<h3>Презентации</h3>
+ 					<a href="">
+ 						<img src=" " alt="презентации">
+ 					</a>
+ 					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
+ 					<a class="button" href="#">заказать</a>
+ 				</li>
+ 			</ul>  		
+    	</section>
+
+    	<section class="about">
+    		<h2 class="visually-hidden">О нас</h2>
+    		<div class="about-us">
+    			<b>Мы — маленькая, но гордая дизайн-студия из Краснодара. </b>
+    			<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+			</div>
+			<h3>Выполняем заказы на разработку</h3>
+			<ul>
+				<li><a href="#">Веб-сайтов любой сложности</a></li>
+				<li><a href="#">Мобильных приложений для iOS и Android
+				</a></li>
+				<li><a href="">Слайдшоу и видео для корпоративных презентаций</a></li>
+			</ul>
+
+    	</section>
+    	<section class="best-of-us">
+    		<h2 class="visually-hidden">Лучшее в нас</h1>
+    			<img src="" alt="Nёrds">
+    			<table>
+    				<caption>с 2004 года любим точность во всем:
+    				</caption>
+    				<tr>
+    					<th>Уровень самоотдачи</th>
+    					<th>Соблюдение сроков</th>
+    					<th>Минимальная предоплата</th>
+    				</tr>
+    				<tr>
+    					<td>146<span>%</span></td>
+    					<td>100<span>%</span></td>
+    					<td>50<span>%</span></td>
+    				</tr>
+    			</table>
+			
+    	</section>
+
+    	<article class="partners">
+    		<h2 class="visually-hidden">Партнеры</h2>
+    		<a class="partner-button" href="https://htmlacademy.ru/intensive/htmlcss">Html academy</a>
+    		<a class="partner-button" href="#">Barbershop</a>
+    		<a class="partner-button" href="#">Pink</a>
+    		<a class="partner-button" href="#">Mishka</a>
+    	</article>
+
+	 </main>
+	
+	 <footer class="main-footer">
+		
+		<div class="footer-contacts">
+			<b>nёrds design studio</b>
+			<p>191186, Санкт-Петербург,<br>
+			   ул. Б. Конюшенная, д. 19/8
+			</p>
+			<p>тел. +7 (812) 275-75-75</p>
+			<p>
+				<a class="button" href="contacts.html">Напишите нам</a>
+			</p>
+		
+			<img src="" alt="maps">
+		</div>
+
+	 	<div class="footer-social">
+			<ul>
+         		<li><a class="social-button" href="#">Вконтакте</a></li>
+          		<li><a class="social-button" href="#">Фейсбук</a></li>
+          		<li><a class="social-button" href="#">Инстаграм</a></li>
+        	</ul>
+
+        	<p><b>Давайте дружить, это выгодно!</b>
+       	 	Скидка 10% для друзей из социальных сетей.</p>
+		</div>
+
+	 </footer>
 
   </body>
 </html>
