@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>HTML Academy: Нёрдс</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -101,7 +101,11 @@
                 </a>
               </h3>
               <p class="catalog-item-price">
-                <a class="button" href="#">9 900 РУБ.</a>
+                <button class="button button-price" type="button">
+                  <span >9 900 РУБ</span>
+                </button>
+                <!--<b>9 900 РУБ.<b>
+                <a class="button" href="#">Купить</a>-->
               </p>
             </div>
           </li>
@@ -166,18 +170,41 @@
     </main>
     <footer class="main-footer">
   <!--Контакты с картой-->
-      <div class="footer-contacts">
+     <div class="footer-contacts">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
         <b>nёrds design studio</b>
         <p>191186, Санкт-Петербург,<br>
          ул. Б. Конюшенная, д. 19/8
         </p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <p>
-          <a class="button" href="contacts.html">Напишите нам</a>
-        </p>
-  <!--карта-->
-        <img src="img/Map.png" width="1400" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <span>тел. +7 (812) 275-75-75</span>
+        <a class="button" href="contacts.html">Напишите нам</a>
+        <img src="img/Map.png" width="1400" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург
+         ">
       </div>
+  <!--форма связи-->    
+      <section>
+        <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="modal modal-contact">
+            <legend>Напишите нам</legend>
+            <p class="contact-item">
+              <label for="contact-name">Ваше имя:</label>
+              <input id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p class="contact-item">
+              <label for="contact-e-mail">Ваш e-mail:</label>
+              <input id="contact-e-mail" type="email" name="name"placeholder="email@exemple.com">
+            </p>
+            <p class="contact-item">
+              <label for="contact-text">Текст письма:</label>
+              <textarea id="contact-text" placeholder="В свободной форме">
+              </textarea>
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </fieldset>
+        </form>
+  <!--кнопка закрытия поп-апа-->
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
   <!--Социальные кнопки-->
       <div class="footer-social">
         <ul>
@@ -186,7 +213,7 @@
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
         <p><b>Давайте дружить, это выгодно!</b></p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
       </div>
     </footer>
   </body>
