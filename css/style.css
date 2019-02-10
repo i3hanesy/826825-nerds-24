@@ -1,4 +1,4 @@
- *{
+ /**{
 	outline: 1px dashed red;
 }
 */
@@ -31,6 +31,7 @@ body {
 .container {
 	width: 1440px;
 	margin: 0 auto;
+	/*padding: 0 140px;*/
 }
 
 a {
@@ -38,14 +39,25 @@ a {
 }
 
 .main-header {
+	margin-bottom: 80px;
+	
+	/*временно*/
+	min-height: 545px;
+}
+
+.main-navigation {
+	display: flex;
+	justify-content: space-between;
 
 	/*временно*/
-	min-height: 546px;
+	min-height: 115px;
+	
+	background-color: #eeeeee;
 }
 
 .main-header-logo {
-	width:160px;
-	height:65px;
+	width: 160px;
+	height: 65px;
 	/*display: block;*/
 }
 
@@ -57,22 +69,10 @@ a {
 	opacity: 0.3;
 }
 
-.main-navigation {
-	display: flex;
-	justify-content: space-between;
 
-
-	/*временно*/
-	min-height: 116px;
-	
-
-	
-
-	background-color: #eeeeee;
-}
 
 .site-navigation {
-	width:500px;
+	width: 500px;
 	margin: 0;
 	padding: 0; 
 
@@ -93,7 +93,7 @@ a {
 
 .site-navigation a,
 .user-cart a {
-	font-family: "Roboto", Arial, sans-serif;
+	/*font-family: "Roboto", Arial, sans-serif;*/
 	font-size: 16px;
 	line-height: 30px;
 	font-weight: 500;
@@ -118,18 +118,32 @@ a {
 .sliders {
 	display: flex;
 	width: 1440px;
-	height: 430px;
+	height: 425px;
 
-	margin-bottom: 80px;
+	background-color: #eeeeee;
 }
 
 /*блок преимуществ*/
+.features {
+	margin-bottom: 80px;
+	padding: 0 140px;
+}
+
 .features-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
 .feature-item	{
+	width: 350px;
 	text-align: center;
+
+	/*временно*/
+	min-height: 350px;
 }
 
 .feature-item h3 {
@@ -193,6 +207,26 @@ a {
 	background-color: #e5a722;	
 }
 
+/*о нас*/
+
+.index-columns {
+	display: flex;
+	justify-content: space-between;
+	/*margin: 0;*/
+	padding: 0 140px;
+	padding-top: 40px;
+	padding-bottom: 80px
+	
+}
+
+.about {
+	width: 660px;
+
+
+	/*Временно*/
+	min-height: 410px;
+}
+
 .about h3 {
 	text-transform: uppercase;
 }
@@ -204,6 +238,16 @@ a {
 
 .orders {
 	list-style: none;
+}
+
+.best-of-us {
+	width: 360px;
+	
+	
+
+	/*Вреенно*/
+	min-height: 410px;
+
 }
 
 .best-table caption {
@@ -226,6 +270,19 @@ a {
 .best-table tr span {
 	font-size: 22.5px;
 	vertical-align: super;
+}
+
+.partners {
+	display: flex;
+	justify-content: space-between;
+	/*margin: 0;
+	margin-bottom: 82px;*/
+	padding: 0 140px;
+	min-height: 185px;
+}
+
+.partners a {
+	width: 280px;
 }
 
 .footer-contacts {
@@ -384,7 +441,7 @@ a {
 }
 
 /*кнопки пагинации*/
-.paginarion-item a,
+.pagination-item a,
 .button-paginator-next {
 	font-size: 16px;
 	line-height: 18px;
@@ -392,14 +449,14 @@ a {
 	background-color: #eeeeee;
 }
 
-.paginarion-item a:hover,
-.paginarion-item a:focus,
+.pagination-item a:hover,
+.pagination-item a:focus,
 .button-paginator-next:hover,
 .button-paginator-next:focus {
 	background-color: #dfdfdf;	
 }
 
-.paginarion-item a:active,
+.pagination-item a:active,
 .button-paginator-next:active {
 	opacity: 0.3;
 	background-color: #5d5d5d;
@@ -409,16 +466,16 @@ a {
 
 .pagination-item-current a {
 	color: #000000;
-	background: transparent;
+	background-color: transparent;
 	border: 3px solid #dbdbdb;
 }
 
-.paginarion-item-current a:hover,
-.paginarion-item-current a:focus,		
-.paginarion-item-current a:active {
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,		
+.pagination-item-current a:active {
 	color: #000000;
 	border: 3px solid #dbdbdb;
-	background: transparent;	
+	background-color: transparent;	
 }
 
 /*футер*/
