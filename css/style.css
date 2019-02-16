@@ -1,10 +1,9 @@
- /**{
+ *{
 	outline: 1px dashed red;
 }
-*/
+
 body {
 	min-width: 1440px;
-	min-height: 2476px;
 	margin: 0;
 	padding: 0;
 
@@ -15,22 +14,33 @@ body {
 	color: #000000;
 
 	background-color: #ffffff;
-	background-image: url("../img/bg.jpg");
+	/*background-image: url("../img/bg.jpg");
 	background-position: top center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 }
 
-.visually-hidden {
+
+.visually-hidden:not(:focus):not(:active) {
+
 	position: absolute;
-	clip: rect(0 0 0 0);
-  	width: 1px;
- 	height: 1px;
-  	margin: -1px;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+  	clip: rect(0 0 0 0);
+  	overflow: hidden;
 }
 
 .container {
-	width: 1440px;
-	margin: 0 auto;
+	width: 1160px;
+	margin-left: auto;
+	margin-right: auto;
 	/*padding: 0 140px;*/
 }
 
@@ -39,8 +49,11 @@ a {
 }
 
 .main-header {
-	margin-bottom: 80px;
+	margin: 0;
+	padding: 0;
+
 	
+	background-color: #eeeeee;	
 	/*временно*/
 	min-height: 545px;
 }
@@ -51,8 +64,6 @@ a {
 
 	/*временно*/
 	min-height: 115px;
-	
-	background-color: #eeeeee;
 }
 
 .main-header-logo {
@@ -72,6 +83,7 @@ a {
 
 
 .site-navigation {
+	display: flex;
 	width: 500px;
 	margin: 0;
 	padding: 0; 
@@ -117,16 +129,31 @@ a {
 
 .sliders {
 	display: flex;
-	width: 1440px;
-	height: 425px;
+	
+
+	margin-bottom: 80px;
 
 	background-color: #eeeeee;
 }
 
+/*шапка каталога*/
+
+.inner-page .main-header {
+	margin-bottom: 62px;
+	min-height: 355px;
+}
+
+.inner-page nav {
+	margin-bottom: 82px;
+}
+
 /*блок преимуществ*/
 .features {
-	margin-bottom: 80px;
-	padding: 0 140px;
+	margin:0;
+	padding:0;
+	margin-bottom: 78px;
+	
+
 }
 
 .features-list {
@@ -134,17 +161,21 @@ a {
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
+	padding-right: 60px;
 
 	list-style: none;
 }
 
 .feature-item	{
-	width: 350px;
-	text-align: center;
+	margin: 0;
+	padding: 0;
+	width: 300px;
+	text-align: left;
 
 	/*временно*/
 	min-height: 350px;
 }
+
 
 .feature-item h3 {
 	font-size: 24px;
@@ -212,28 +243,34 @@ a {
 .index-columns {
 	display: flex;
 	justify-content: space-between;
-	/*margin: 0;*/
-	padding: 0 140px;
+	margin: 0;
+	padding: 0;
 	padding-top: 40px;
-	padding-bottom: 80px
-	
+	border-top: 2px solid #eeeeee; 
+	margin-bottom: 78px;
+	/*временно*/
+	min-height: 410px;
 }
 
 .about {
 	width: 660px;
-
-
-	/*Временно*/
-	min-height: 410px;
+	padding-top: 35px
 }
 
 .about h3 {
 	text-transform: uppercase;
 }
 .about-us b {
+	display: block;
 	font-size: 45px;
 	line-height: 45px;	
 	font-weight: 500;
+
+	margin-bottom: 32px;
+}
+
+.about-us p {
+	margin-bottom: 40px
 }
 
 .orders {
@@ -242,12 +279,6 @@ a {
 
 .best-of-us {
 	width: 360px;
-	
-	
-
-	/*Вреенно*/
-	min-height: 410px;
-
 }
 
 .best-table caption {
@@ -273,23 +304,34 @@ a {
 }
 
 .partners {
-	display: flex;
-	justify-content: space-between;
-	/*margin: 0;
-	margin-bottom: 82px;*/
-	padding: 0 140px;
-	min-height: 185px;
+	/*display: flex;*/
+
+	/*justify-content: space-between;*/
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 28px;
+	margin: 0;
+	text-align: center;
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+
+
+	/*min-height: 180px;*/
 }
+
+
+	
 
 .partners a {
-	width: 280px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	margin-right: 80px;
 }
 
-.footer-contacts {
-	color: #666666;
-}
 
-/*разметка каталога*/
+
+/*разметка каталога.html*/
 .page-title {
 	font-size: 55px;
 	line-height: 55px;
@@ -302,7 +344,24 @@ a {
 	border-bottom: 2px solid #fb565a;
 }
 
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+	
+	min-height: 2025px;
+}
+
 /*фильтер*/
+
+.filters form {
+	margin: 0;
+	padding: 0;
+	width: 260px;
+	
+	/*временно*/
+	min-height: 776px;
+}
+
 
 .filter-price {
 	border: none;
@@ -311,7 +370,7 @@ a {
 
 .price label {
 	font-size: 16px;
-	line-height: 22px;
+	line-height: 20px;
 	font-weight: 400;
 	color: #283136;
 
@@ -367,14 +426,32 @@ a {
 	border-top: 3px solid #bfbfbf;
 }
 
-/*каталог шаблонов*/
+/*сортировка каталога*/
+
+.catalog-sorting {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	width: 760px;
+
+	min-height: 75px;
+}
 
 .catalog-sorting span {
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: 700;
+	width: 160px;
 
 	text-transform: uppercase;
+}
+
+.catalog-controls {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 25px;
+	width: 360px;
 }
 
 .catalog-sorting a {
@@ -402,8 +479,43 @@ a {
 	opacity: 1;
 }
 
-.catalog ul {
+
+/*каталог шаблонов*/
+
+.catalog {
+	margin: 0;
+	padding: 0;
+	width: 760px;
+}
+
+
+.catalog-list {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 25px;
+
+	flex-wrap: wrap;
+	justify-content: space-between;
+
 	list-style: none;
+}
+
+.catalog-item {
+	position: relative;
+	width: 360px;
+	margin-bottom: 33px;
+
+	min-height: 617px;
+}
+
+.hover-info {
+	position: absolute;
+	bottom: 0;
+	width: 360px;
+	background-color: #eeeeee; 
+
+	min-height: 230px;
 }
 
 .hover-info h3 {
@@ -441,6 +553,20 @@ a {
 }
 
 /*кнопки пагинации*/
+
+
+.pagination-list {
+	margin: 0;
+	padding: 0;
+	width: 444px;
+	
+
+	list-style: none;
+	/*временно*/
+	background-color: #eeeeee;
+	min-height: 50px;
+}
+
 .pagination-item a,
 .button-paginator-next {
 	font-size: 16px;
@@ -479,13 +605,103 @@ a {
 }
 
 /*футер*/
-.footer-contacts b {
+.main-footer-inner {
+	margin-top: 60px;
+}
+
+.main-footer {
+	margin-top: 80px;
+}
+
+
+
+/*карта и контакты*/
+.footer-contacts {
+	position: relative;
+	color: #666666;
+	margin-bottom: 70px;
+}
+
+/*вместо карты*/
+.footer-contacts .map-image {
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+	width: 100%;
+	min-height: 416px;
+	background-image: url(../img/Map.png);
+	background-position: 0 0;
+  	background-repeat: no-repeat;
+}
+
+.contact-area b {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
 }
+
+.contact-area {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 319px;
+	min-height: 308px;
+	top: 55px;
+
+	background-color: #ffffff;
+}
+
+.footer-social	{
+	display: flex;
+	justify-content: flex-start;
+	margin: 0;
+	padding: 0;
+
+	min-height: 80px;
+}
+
+.footer-social ul {
+	display: flex;
+	justify-content: space-between;
+	margin-left:-40px;
+	list-style: none;
+}
+
+.footer-social li {
+	padding: 0;
+	margin: 0;
+	width: 80px;
+}
+.social-buttons {
+	width: 260px;
+	margin-right: 140px;
+}
+
+.friends {
+	margin-top: -35px;
+	width: 560px;
+}
+
+.social-button {
+	color: #000000;
+}
+
+.friends p {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+
+	margin-bottom: 9px;
+}
+
+.friends span {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+}
+
 
 /*форма связи*/
 .contact-form fieldset {
@@ -539,32 +755,3 @@ a {
 .contact-item textarea:hover {
 	border-color: #b4b9bb;
 }
-
-/*не правильный ввод
-.contact-item input:hover,
-.contact-item textarea:hover {
-	
-}
-*/
-
-.footer-social ul {
-	list-style: none;
-}
-
-.social-button {
-	color: #000000;
-}
-
-.footer-social p {
-	font-size: 36px;
-	line-height: 36px;
-	font-weight: 700;
-}
-
-.footer-social span {
-	font-size: 16px;
-	line-height: 22px;
-	font-weight: 400;
-}
-
-
