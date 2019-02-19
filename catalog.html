@@ -33,19 +33,24 @@
           <h2 class="visually-hidden">Фильтр товаров</h2>
     <!-- форма -->
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Стоимость</legend>
-              <p class="price">
-                <label for="filter-price-from">От</label>
-                <input class="filter-price filter-price-from" type="text" name="price-from" id="filter-price-from" placeholder="0">
-              </p>  
-              <p class="price">
-                <label for="filter-price-to">До</label>
-                <input class="filter-price filter-price-to" type="text" name="price-to" id="filter-price-to" placeholder="15 000">
-              </p>  
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="15000"></label>
+                </div>
+              </div>
             </fieldset>
-            <fieldset>
-              <legend>Сетка</legend>
+            <fieldset class="filter-item">
+              <legend class="grids">Сетка</legend>
                 <ul>
                   <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive">
@@ -61,8 +66,8 @@
                   </li>
                 </ul>
             </fieldset>
-            <fieldset>
-              <legend>Особенности</legend>
+            <fieldset class="filter-item">
+              <legend class="specificity">Особенности</legend>
                 <ul>
                   <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
