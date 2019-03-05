@@ -10,21 +10,25 @@
   <body>
     <header class="main-header">
       <div class="container">
-		    <nav class="main-navigation">  
+		    <div class="main-navigation">  
           <a class="main-header-logo main-header-logo-active">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип сайта готовых шаблонов Нёрдс">
           </a>
           <ul class="site-navigation">
-				    <li><a href="studio.html">студия</a></li>
-				    <li><a href="clientele.html">клиенты</a></li>
-				    <li><a href="catalog.html">магазин</a></li>
-				    <li><a href="contacts.html">контакты</a></li>
+  				  <li><a href="studio.html">студия</a></li>
+  			    <li><a href="clientele.html">клиенты</a></li>
+  			    <li><a href="catalog.html">магазин</a></li>
+			      <li><a href="contacts.html">контакты</a></li>
           </ul>
           <div class="user-cart">
             <a class="cart" href="#">корзина</a>
        	  </div>
-        </nav>
-        <div class="sliders">
+        </div>
+      </div>
+    </header>
+    <main>
+        <section class="sliders">
+          <div class="container">   
             <h2 class="visually-hidden">Слайдер </h2>
             <div class="slider-controls">
               <i class="active"></i>
@@ -48,37 +52,35 @@
                 <a class="slider-item-button button" href="#">Узнать больше</a>
               </li>  
             </ul>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="container">
+          </div>
+        </section>
+        <div class="container">
 		    <h1 class="visually-hidden">Дизайн-студия Nёrds</h1>
         <section class="features">
  			    <h2 class="visually-hidden">Преимущества</h2>
  			    <ul class="features-list">
             <li class="feature-item">
- 					    <h3>Веб-сайты</h3>
               <img src="img/Web-sites.png" width="300" height="146" alt="веб-сайты">  
+ 					    <h3>Веб-сайты</h3>
  					    <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
  					    <a class="button button-feature button-red" href="#">заказать</a>
             </li>
             <li class="feature-item">
- 					    <h3>Приложения</h3>
               <img src="img/APPS.png" width="300" height="146" alt="приложения">  
+ 					    <h3>Приложения</h3>
  					    <p>Покорите топ-10 приложений в AppStore и Google Play</p>
  					    <a class="button button-feature button-green" href="#">заказать</a>
             </li>
             <li class="feature-item">
- 					    <h3>Презентации</h3>
               <img src="img/presentations.png" width="300" height="146" alt="презентации">  
+ 					    <h3>Презентации</h3>
  					    <p>Вы даже не подозреваете, насколько вы изумительны!</p>
  					    <a class="button button-feature button-yellow" href="#">заказать</a>
             </li>
  			    </ul>  		
         </section>
-        <div class="index-columns ">
-          <section class="about">
+        <section class="index-columns ">
+          <div class="about">
             <h2 class="visually-hidden">О нас</h2>
             <div class="about-us">
     		      <b>Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</b>
@@ -90,8 +92,8 @@
 				      <li>Мобильных приложений для iOS и Android</li>
 				      <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
-          </section>
-          <section class="best-of-us">
+          </div>
+          <div class="best-of-us">
             <h2 class="visually-hidden">Лучшее в нас</h2>
             <img class="" src="img/nerds-illustration.png" width="360" height="208" alt="Nёrds">
             <table class="best-table">
@@ -109,29 +111,29 @@
                 </tr>
               </tbody>  
             </table>
-		      </section>
-        </div> 
+		      </div>
+        </section> 
         <section class="partners">
           <h2 class="visually-hidden">Партнеры</h2>
           <ul class="partners-list">
             <li class="partner-item">
               <a class="partner-button" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/logo-1.png" width="199" height="68" alt="Html academy">
+                <img src="img/logo-htmlAcademy.png" width="199" height="68" alt="Html academy">
               </a>
             </li> 
             <li class="partner-item">
               <a class="partner-button" href="#">
-                <img src="img/logo-2.png" width="209" height="90" alt="Barbershop">
+                <img src="img/logo-barbershop.png" width="209" height="90" alt="Barbershop">
               </a>
             </li>
             <li class="partner-item">
               <a class="partner-button" href="#">
-                <img src="img/logo-3.png" width="185" height="52" alt="Pink">
+                <img src="img/logo-Pink.png" width="185" height="52" alt="Pink">
               </a>
             </li>
             <li class="partner-item">
               <a class="partner-button" href="#">
-                <img src="img/logo-4.png" width="173" height="84" alt="Mishka">
+                <img src="img/logo-Mishka.png" width="173" height="84" alt="Mishka">
               </a>
             </li>
           </ul>
@@ -140,13 +142,8 @@
     </main>
     <footer class="main-footer">
 		  <section class="footer-contacts">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <!--<img src="img/Map.png" width="1400" height="416" alt="Офис компании по адресу   ул. Большая Конюшенная 19/8, Санкт-Петербург
-        <img src="img/map-marker.png" width="231" height="190">
-        ">-->
-        <div class="map-image">
-          
-        </div>
+       <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300289!2d30.320858715830845!3d59.93871916905453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1551629093874" width="1440" height="416" frameborder="0" style="border:0" allowfullscreen>
+        </iframe>
         <div class="container">
           <div class="contact-area">
             <b>nёrds design studio</b>
@@ -230,5 +227,6 @@
   <!--кнопка закрытия попапа-->
         <button class="modal-close" type="button">Закрыть</button>
       </section>
+    <script src="js/minimize.js"></script>    
   </body>
 </html>

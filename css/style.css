@@ -1,8 +1,3 @@
-* {
-	outline: 1px dashed red;
-}
-
-
 body {
 	min-width: 1440px;
 	margin: 0;
@@ -14,10 +9,6 @@ body {
 	font-weight: 400;
 	color: #000000;
 
-	
-	/*background-image: url(img/"nerds-catalog.png");
-	background-position: top center;
-	background-repeat: no-repeat;*/
 	background-color: #ffffff;
 }
 
@@ -71,6 +62,7 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	text-align: center;
 	text-decoration: none;
+	vertical-align: middle;
 
 	border-radius: 3px;
 	border: none;
@@ -79,25 +71,21 @@ input[type="radio"].visually-hidden {
 .main-header {
 	margin: 0;
 	padding: 0;
-
-	/*min-height: 535px;*/
-	/*box-sizing: border-box;*/
 	
 	background-color: #eeeeee;	
-	margin-bottom: 80px;
-
 }
 
 .main-navigation {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin: 0;
 	padding: 0;
 	padding-top: 49px;
-	/*временно*/
-
-	/*min-height: 114px;*/
+	
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	
@@ -109,18 +97,16 @@ input[type="radio"].visually-hidden {
 	border: none;
 	width: 160px;
 	height: 65px;
-	margin-right: 202px;
-	/*display: block;*/
 
 	-webkit-box-sizing: border-box;
-
-	        box-sizing: border-box;;
+			box-sizing: border-box;;
 }
 
 .main-header-logo:hover,
 .main-header-logo:focus {
 	opacity: 0.8;
 }
+
 .main-header-logo:active {
 	opacity: 0.3;
 }
@@ -144,13 +130,10 @@ input[type="radio"].visually-hidden {
 	        justify-content: space-between;
 	margin: 0;
 	padding: 0; 
-	margin-right: 200px;
-
 	padding-top: 26px;
 
 	list-style: none;
 }
-
 
 .user-cart {
 	position: relative;
@@ -164,6 +147,7 @@ input[type="radio"].visually-hidden {
 
 	        box-sizing: border-box;
 }
+
 .site-navigation a,
 .user-cart a {
 	display: block;
@@ -175,8 +159,6 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	color: #000000;
 }
-
-
 
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -205,12 +187,12 @@ input[type="radio"].visually-hidden {
 }
 
  
-
 /*слайдеры*/
 
 .sliders {
 	position: relative;
 	background-color: #eeeeee;
+	margin-bottom: 80px;
 }
 
 .slider-controls {
@@ -348,19 +330,15 @@ input[type="radio"].visually-hidden {
 	        box-shadow: 0 3px rdba(0, 0, 0, 0.1) insert;
 }
 
-/*шапка каталога*/
-
-.inner-page .main-header {
-	min-height: 355px;
-	margin-bottom: 57px;
+.page-title {
+	display: block;
+	margin: 0;
+	padding: 0;
+	padding-top: 77px;
+	padding-bottom: 110px;
+	margin-bottom: 55px;
+	background-color: #eeeeee;
 }
-
-.inner-page .main-navigation {
-	margin-bottom: 77px;
-}
-
-
-
 
 
 /*блок преимуществ*/
@@ -368,8 +346,6 @@ input[type="radio"].visually-hidden {
 	margin:0;
 	padding:0;
 	margin-bottom: 80px;
-	
-
 }
 
 .features-list {
@@ -415,13 +391,6 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 25px;
-
-	-webkit-box-ordinal-group: 0;
-
-	    -ms-flex-order: -1;
-
-	        order: -1;
-
 }
 
 .feature-item h3 {
@@ -433,17 +402,15 @@ input[type="radio"].visually-hidden {
 	line-height: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
-	-webkit-box-ordinal-group: 1;
-	    -ms-flex-order: 0;
-	        order: 0;
+	
 }
 
 .feature-item p {
 	margin: 0;
 	padding: 0;
+	width: 260px;
 	margin-bottom: 33px;
 	margin-right: 50px;
-
 }
 
 /*кнопки преимуществ*/
@@ -512,8 +479,8 @@ input[type="radio"].visually-hidden {
 	        box-shadow: 0 3px rdba(0, 0, 0, 0.1) insert;
 }
 
-/*о нас*/
 
+/*о нас*/
 .index-columns {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -525,9 +492,7 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	padding-top: 40px;
 	border-top: 2px solid #eeeeee; 
-	margin-bottom: 50px;
-	/*временно
-	min-height: 410px;*/
+	margin-bottom: 48px;
 }
 
 .about {
@@ -558,7 +523,6 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	margin-bottom: 25px;
 	
-
 	text-transform: uppercase;
 	font-size: 16px;
 	line-height: 24px;
@@ -596,6 +560,7 @@ input[type="radio"].visually-hidden {
 	background-color: #fb565a;
 }
 
+
 /*лучшее в нас*/
 .best-of-us img {
 	margin-bottom: 28px;
@@ -620,6 +585,14 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 }
 
+.best-table td {
+	width: 120px;
+	padding: 15px 0;
+	font-size: 45px;
+	line-height: 10.06px;
+	font-weight: 700;
+}
+
 .best-table th {
 	width: 120px;
 
@@ -642,19 +615,19 @@ input[type="radio"].visually-hidden {
 	font-size: 28px;
 }
 
-/*блок партнеры*/
 
+/*блок партнеры*/
 .partners {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	border-top: 1px solid #eeeeee;
+	border-top: 2px solid #eeeeee;
 	border-bottom: 2px solid #eeeeee;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	padding-top: 28px;
-	padding-bottom: 40px;
+	padding-top: 45px;
+	padding-bottom: 43px;
 }
 
 .partners-list {
@@ -682,31 +655,46 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	margin-right: 40px;
+	
 
 	min-width: 260px;
 }
 
-.partner-item::after {
+.partner-item img{
+	display: block;
+	padding: 0;
+	margin: 0;
+	opacity: 0.2;
+}
+
+.partner-item .partner-button:hover img,
+.partner-item .partner-button:focus img {
+
+	opacity: 1;
+}
+
+.partner-item .partner-button:active img {
+	opacity: 0.1;
+}
+
+.partner-item::before {
 	content: "";
     position: absolute;
     width: 2px;
     height: 52px;
     background-color: #eeeeee;
-    top: 32px;
-    left: 280px;
+    top: 20px;
+    right: -21px;
 }
 
 .partner-item:last-child {
 	margin-right: 0;
 }
 
-.partner-item:last-child::after {
+.partner-item:last-child::before {
 	display: none;
 }
 
-.partner-button {
-	padding-top: 20px;
-}
 
 /*разметка каталога.html*/
 .page-title {
@@ -729,9 +717,8 @@ input[type="radio"].visually-hidden {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	
-	/*min-height: 2025px;*/
 }
+
 
 /*фильтер каталога*/
 .filters {
@@ -744,7 +731,6 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 
 }
-
 
 .filter-item {
 	margin: 0;
@@ -762,6 +748,7 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	font-weight: 700;
 }
+
 
 /*ползунок*/
 .range-filter {
@@ -830,7 +817,8 @@ input[type="radio"].visually-hidden {
 .price-controls label {
 	display: inline-block;
 	width: 50%;
-
+	
+	vertical-align: middle;
 	font-size: 16px;
 	text-transform: uppercase;
 }
@@ -854,7 +842,6 @@ input[type="radio"].visually-hidden {
 	text-align: right;
 }
 
-
 .filter ul {
 	margin: 0;
 	padding: 0;
@@ -868,12 +855,7 @@ input[type="radio"].visually-hidden {
 .filter .filter-option {
 	margin-bottom: 20px;
 	padding-left: 36px;
-
-	
 }
-
-
-
 
 .filter-option label {
 	position: relative;
@@ -881,7 +863,10 @@ input[type="radio"].visually-hidden {
 	display: block;
 
 	cursor: pointer;
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
 }
 
 .grids {
@@ -889,15 +874,12 @@ input[type="radio"].visually-hidden {
 }
 
 .grids legend {
-	margin-bottom: 14px;
+	margin-bottom: 16px;
 }
-
-
 
 .specificity legend {
 	margin-bottom: 17px;
 }
-
 
 .filter-input-checkbox + label::before {
 	content: "";
@@ -909,18 +891,11 @@ input[type="radio"].visually-hidden {
 	top: 0;
 	left: -35px;
 
-	
-
-
 	background-image: url("../img/checkbox-off.svg");
   	background-repeat: no-repeat;
   	background-position: 0 0;
-
   	opacity: 0.4;
-  
-
 }
-
 
 .filter-input-checkbox:checked + label::before {
 	content: "";
@@ -932,12 +907,10 @@ input[type="radio"].visually-hidden {
 	top: 0;
 	left: -35px;
 
-	
 	background-image: url("../img/checkbox-on.svg");
   	background-repeat: no-repeat;
   	background-position: 0 0;
   	opacity: 0.4;
-
 }
 
 .filter-input-radio + label::before {
@@ -962,7 +935,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 
 	width: 27px;
-	height: 23px;
+	height: 25px;
 
 	top: -3px;
 	left: -35px;
@@ -981,7 +954,6 @@ input[type="radio"].visually-hidden {
 
 .filter-input:disabled + label {
 	color: #283136;
-
 	opacity: 0.5;
 }
 
@@ -998,6 +970,7 @@ input[type="radio"].visually-hidden {
 	background-color: #eeeeee;
 	border: none;
 	cursor: pointer;
+	outline: none;
 }
 
 .filter-button:hover,
@@ -1012,9 +985,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-
 /*сортировка каталога*/
-
 .catalog-sorting {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1024,9 +995,9 @@ input[type="radio"].visually-hidden {
 	        justify-content: space-between;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 55px;
 	width: 760px;
 
-	min-height: 75px;
 }
 
 .catalog-sorting span {
@@ -1034,14 +1005,20 @@ input[type="radio"].visually-hidden {
 	line-height: 18px;
 	font-weight: 700;
 	width: 160px;
+	display: block;
+	margin-top: 5px;
 
 	text-transform: uppercase;
 }
 
 .catalog-controls {
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 	margin: 0;
 	padding: 0;
 	padding-top: 3px;
@@ -1103,8 +1080,8 @@ input[type="radio"].visually-hidden {
 	opacity: 1;
 }
 
-/*каталог шаблонов*/
 
+/*каталог шаблонов*/
 .catalog {
 	margin: 0;
 	padding: 0;
@@ -1140,42 +1117,55 @@ input[type="radio"].visually-hidden {
 	display: block;
 	margin: 0;
 	padding: 0;
+
+	border: 0.5px solid #e5e5e5; 
 }
 
-.catalog-item .item-browser {
+.catalog-item::before {
+	content: "";
+	display: block;
+	margin: 0;
+	padding: 0;
 
-	width: 360px;
-	height: 41px;
+	width: 361px;
+	height: 40px;
 
 	background-image: url("../img/browser.svg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	opacity: 0.12;
+}
 
+.catalog-item:hover::before,
+.catalog-item:focus::before{
+	opacity: 1;
 }
 
 .hover-info {
+	display :none;
 	position: absolute;
 	
 	bottom: 0;
 	left: 0;
-	padding: ;
-	padding-top: 26px;
+
+	padding-top: 28px;
 
 	width: 360px;
-	
+	min-height: 231px;
 	text-align: center;
 	background-color: #eeeeee; 
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box; 
+	        box-sizing: border-box;
+}
 
-
+.catalog-item:hover .hover-info {
+	display: block;
 }
 
 .hover-info h3 {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 15px;
-
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
@@ -1188,9 +1178,12 @@ input[type="radio"].visually-hidden {
 	display: block;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 33px;
+	margin-bottom: 32px;
+	width: 240px;
+	margin-left: auto;
+	margin-right: auto;
 
-
+	text-align: center;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 400;
@@ -1211,10 +1204,10 @@ input[type="radio"].visually-hidden {
 	line-height: 18px;
 	font-weight: 500;
 
-	
 	background-color: #fb565a;
 	cursor: pointer;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .hover-info .button-price:hover,
@@ -1226,33 +1219,29 @@ input[type="radio"].visually-hidden {
 	background-color: #d7373b;
 }
 
-.hover-info {
-	display: none;
-}
 
 .catalog-item .item-browser-hover {
 	opacity: 1;
 }
 
-.hover-info-show {
-	display: block;
-}
-/*кнопки пагинации*/
 
+/*кнопки пагинации*/
 .paginations {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 .pagination-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	
-	
-
 	list-style: none;
-	
 	min-height: 50px;
 }
 
@@ -1311,14 +1300,14 @@ input[type="radio"].visually-hidden {
 	background-color: transparent;	
 }
 
-/*футер*/
 
+/*футер*/
 .main-footer {
 	margin-top: 80px;
 }
 
 .main-footer-inner {
-	margin-top: 60px;
+	margin-top: 59px;
 }
 
 
@@ -1326,19 +1315,13 @@ input[type="radio"].visually-hidden {
 .footer-contacts {
 	position: relative;
 	color: #666666;
-	margin-bottom: 70px;
+	margin-bottom: 65px;
 }
 
-/*вместо карты*/
-.footer-contacts .map-image {
-	margin: 0;
-	padding: 0;
-	background-color: #000000;
+/*карта*/
+.footer-contacts iframe{
 	width: 100%;
 	min-height: 416px;
-	background-image: url(../img/Map.png);
-	background-position: 0 0;
-  	background-repeat: no-repeat;
 }
 
 .footer-contacts .container {
@@ -1353,24 +1336,22 @@ input[type="radio"].visually-hidden {
 	padding-right: 50px;
 	padding-top: 50px;
 
-	
 	height: 308px;
 	
-
-	bottom: 55px;
+	bottom: 60px;
 	left: 20px;
 
+	background-color: #ffffff;
 	-webkit-box-sizing: border-box;
 
 	        box-sizing: border-box;
-	background-color: #ffffff;
 }
 
 .contact-area b {
 	display: block;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 25px;
+	margin-bottom: 23px;
 
 	font-size: 18px;
 	line-height: 30px;
@@ -1382,7 +1363,7 @@ input[type="radio"].visually-hidden {
 .contact-area p {
 	padding: 0;
 	margin: 0;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 
 	font-size: 16px;
 	line-height: 18px;
@@ -1494,11 +1475,8 @@ input[type="radio"].visually-hidden {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	/*margin-top: -30px;*/
 	width: 560px;
 }
-
-
 
 .friendship p {
 	margin: 0;
@@ -1509,8 +1487,6 @@ input[type="radio"].visually-hidden {
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: 700;
-
-	
 }
 
 .friendship span {
@@ -1524,6 +1500,49 @@ input[type="radio"].visually-hidden {
 
 
 /*форма связи*/
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .modal {
 	display: none;
 	position: fixed;
@@ -1531,12 +1550,17 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 
 	background-color: #ffffff;
-	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	        box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 
 }
 
 .modal-show {
 	display: block;
+
+	-webkit-animation: bounce 0.6s;
+
+	        animation: bounce 0.6s;
 }
 
 .modal-contacts {
@@ -1554,16 +1578,25 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-contacts .wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 
 	margin-bottom: 40px;
 }
 
 
 .contact-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 
 	margin: 0;
 	padding: 0;
@@ -1593,9 +1626,8 @@ input[type="radio"].visually-hidden {
 	line-height: 18px;
 	font-weight: 400;	
 
-			border-radius: 3px;
 	border: 2px solid #d7dcde;
-
+	border-radius: 3px;
 }
 
 .contact-item input {
@@ -1616,13 +1648,12 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 47px;
 }
 
-
-
 .modal-contacts-button {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	padding: 16px 80px;
 	background-color: #fb565a;
+
 }
 
 .modal-contacts-button:hover,
@@ -1638,7 +1669,6 @@ input[type="radio"].visually-hidden {
 	        box-shadow: 0 3px rdba(0, 0, 0, 0.1) insert;
 }
 
-
 .contact-item input:focus,
 .contact-item textarea:focus {
 	border-color: #000000;
@@ -1649,16 +1679,13 @@ input[type="radio"].visually-hidden {
 .contact-item textarea:hover {
 	border-color: #b4b9bb;
 }
+	
 
-
-
-
-
-
+/*кнопка закрытия попапа*/
 .modal-close {
 	position: absolute;
-	top: 65px;
-	right: 105px;
+	top: 76px;
+	right: 93px;
 
 	width: 22px;
 	height: 22px;
@@ -1685,27 +1712,13 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-close::before {
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
 }
 
 .modal-close::after {
-	transform: rotate(-45deg);
-}
-
-.best-of-us img {
-	margin-bottom: 28px;
-}
-
-
-.best-table {
-	width: 360px;
-}
-
-
-.best-table td {
-	width: 120px;
-	padding: 15px 0;
-	font-size: 45px;
-	line-height: 10.06px;
-	font-weight: 700;
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
 }
