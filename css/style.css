@@ -1322,6 +1322,8 @@ input[type="radio"].visually-hidden {
 .footer-contacts iframe{
 	width: 100%;
 	min-height: 416px;
+
+	border: none;
 }
 
 .footer-contacts .container {
