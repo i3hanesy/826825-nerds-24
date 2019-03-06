@@ -1,5 +1,5 @@
 body {
-	min-width: 1440px;
+	min-width: 1200px;
 	margin: 0;
 	padding: 0;
 
@@ -48,6 +48,8 @@ input[type="radio"].visually-hidden {
 	padding: 0 20px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
+
+	        position: relative;
 }
 
 .button {
@@ -218,6 +220,8 @@ input[type="radio"].visually-hidden {
   	width: 18px;
   	height: 18px;
   	padding: 8px;
+
+  	vertical-align: middle;
   
   	border-radius: 50%;
   	cursor: pointer;
@@ -853,7 +857,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter .filter-option {
-	margin-bottom: 20px;
+	margin-bottom: 21px;
 	padding-left: 36px;
 }
 
